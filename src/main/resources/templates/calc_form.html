@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation Form</title>
+</head>
+<body>
+<h1>Введіть три числа:</h1>
+<form action="/calculate" method="get">
+    <label for="number1">Число 1:</label>
+    <input type="number" step="any" name="number1" required><br/><br/>
+
+    <label for="number2">Число 2:</label>
+    <input type="number" step="any" name="number2" required><br/><br/>
+
+    <label for="number3">Число 3:</label>
+    <input type="number" step="any" name="number3" required><br/><br/>
+
+    <h3>Виберіть дію:</h3>
+    <input type="radio" id="min" name="action" value="min" required>
+    <label for="min">Мінімум</label><br/>
+
+    <input type="radio" id="max" name="action" value="max" required>
+    <label for="max">Максимум</label><br/>
+
+    <input type="radio" id="avg" name="action" value="avg">
+    <label for="avg">Середнє арифметичне</label><br/><br/>
+
+    <button type="submit">Розрахувати</button>
+</form>
+</body>
+</html>
